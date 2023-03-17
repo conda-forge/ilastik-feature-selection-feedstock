@@ -1,5 +1,5 @@
 {% set name = "ilastik-feature-selection" %}
-{% set version = "0.2.0" %}
+{% set version = "0.123" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ilastik/ilastik-feature-selection/archive/{{ version }}.tar.gz
-  sha256: 6869068cfa1e14da5c26c614325db97d5cd5ec64f492b65206ae6abb13ea1eeb
+  sha256: b907bc290df3dff8d52df17f9bfbb055489b8e7e977dc5b01747b746f58d2af3
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ test:
 
 about:
   home: https://github.com/ilastik/ilastik-feature-selection
-  summary: 'A Python library for selecting features in classification.'
+  summary: A Python library for selecting features in classification.
   description: |
     A Python library for selecting features in classification.
     Compatible with scikit-learn classifier interface.

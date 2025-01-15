@@ -12,17 +12,19 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - scikit-learn
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ilastik_feature_selection
     - ilastik_feature_selection.filter_feature_selection
